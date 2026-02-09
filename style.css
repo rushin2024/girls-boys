@@ -1,0 +1,213 @@
+:root {
+	--blue-color: #0000ff;
+	--pink-color: #ffc0cb;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-image: linear-gradient(
+		to right,
+		var(--blue-color) -125%,
+		var(--pink-color) 150%
+	);
+	font-family: 'Press Start 2P', system-ui;
+	font-weight: 400;
+	font-style: normal;
+	padding: 16px;
+}
+
+input,
+button,
+select {
+	border: none;
+	border-radius: 8px;
+	font-family: 'Press Start 2P', system-ui;
+	font-weight: 400;
+	font-size: 16px;
+	font-style: normal;
+	outline: none;
+	padding: 16px;
+}
+
+select {
+	-webkit-appearance: none; /* Chrome, Safari, newer Edge */
+	-moz-appearance: none; /* Firefox */
+	appearance: none; /* Standard property */
+}
+
+.btn {
+	display: flex;
+	background-color: #000;
+	border-radius: 8px;
+	color: white;
+	font-size: 16px;
+	padding: 16px;
+	width: fit-content;
+}
+
+.btn-start-game {
+	justify-self: center;
+}
+
+.btn-add-category {
+	font-size: 14px;
+	justify-self: end;
+}
+
+.btn-danger {
+	background-color: #f85c6a;
+	color: #000;
+}
+
+.landing-page .categories {
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+	margin: 32px 0;
+	align-items: end;
+}
+
+.landing-page .categories .category {
+	border-radius: 8px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 16px;
+	width: 100%;
+}
+
+.landing-page .categories .category input {
+	background-color: transparent;
+	outline: none;
+	max-width: 204px;
+}
+
+.landing-page .username {
+	background-color: #000;
+	border-radius: 8px;
+	color: #fff;
+	outline: none;
+	margin: 32px 0;
+	padding: 16px;
+	width: 100%;
+}
+
+.grayscale {
+	filter: grayscale(75%);
+}
+
+.game-page {
+	display: none;
+	gap: 32px;
+	flex-direction: column;
+}
+
+.game-page .categories-timer-container {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	justify-content: space-between;
+	overflow: hidden;
+	width: 100%;
+}
+
+.game-page .categories-timer-container .title-timer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.game-page .categories-timer-container .title-timer .timer {
+	background: #000;
+	border-radius: 8px;
+	color: #fff;
+	height: fit-content;
+	font-size: 14px;
+	padding: 16px;
+}
+
+.game-page .categories-timer-container .categories {
+	display: flex;
+	gap: 16px;
+	overflow-x: scroll;
+}
+
+.game-page .categories-timer-container .categories .category {
+	border-radius: 6px;
+	font-size: 14px;
+	height: fit-content;
+	padding: 12px 16px;
+	width: fit-content;
+}
+
+.game-page .answer-score-container {
+	font-size: 14px;
+}
+
+.game-page .answer-score-container .container {
+	display: none;
+	flex-direction: column;
+	gap: 32px;
+}
+
+.game-page .answer-score-container .container:first-child {
+	display: flex;
+}
+
+.game-page .answer-score-container .container > section {
+	border-radius: 8px;
+	padding: 16px;
+}
+
+.game-page .answer-container input {
+	width: 100%;
+}
+
+.summary-page {
+	display: none;
+	flex-direction: column;
+	gap: 32px;
+	padding: 16px;
+}
+
+.summary-page .username {
+	color: #000;
+}
+
+.summary-page .total-score {
+	text-align: center;
+}
+
+.summary-page .total-score .score {
+	font-size: 24px;
+}
+
+.summary-page .rounds-summary {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.summary-page .rounds-summary > section {
+	border-radius: 8px;
+	padding: 16px;
+}
+
+.summary-page .rounds-summary .label-score {
+	display: flex;
+	justify-content: space-between;
+}
+
+.summary-page .rounds-summary input {
+	background-color: white;
+}
