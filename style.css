@@ -88,7 +88,7 @@ select {
 .landing-page .categories .category input {
 	background-color: transparent;
 	outline: none;
-	max-width: 204px;
+	width: 100%;
 }
 
 .landing-page .username {
