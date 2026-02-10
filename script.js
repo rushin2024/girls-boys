@@ -246,9 +246,9 @@ const generateRoundDataHTML = function (round, data) {
 // Event Handlers
 ////////////////////////////////////////////////
 // prevent accidental page reload
-// window.addEventListener('beforeunload', function (e) {
-// 	e.preventDefault();
-// });
+window.addEventListener('beforeunload', function (e) {
+	e.preventDefault();
+});
 
 // add category
 btnAddCat.addEventListener('click', function () {
