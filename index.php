@@ -19,7 +19,7 @@
 		<!-- landing page -->
 		<section class="landing-page">
 			<p style="color: white; font-size: 10px; text-align: center">
-				Let's Play
+				<?= "Let's Play" ?>
 			</p>
 
 			<p style="color: white; margin: 32px; text-align: center">
